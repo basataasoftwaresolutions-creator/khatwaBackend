@@ -1,0 +1,44 @@
+# Finished API Endpoints
+# Base URL: http://localhost:5000/api/v1
+
+# Auth
+http://localhost:5000/api/v1/auth/register
+http://localhost:5000/api/v1/auth/login
+http://localhost:5000/api/v1/auth/me
+http://localhost:5000/api/v1/auth/forgotpassword
+http://localhost:5000/api/v1/auth/resetpassword/:resettoken
+
+# Projects
+http://localhost:5000/api/v1/projects
+http://localhost:5000/api/v1/projects/:id
+
+# Marketing Plans
+http://localhost:5000/api/v1/projects/:projectId/marketing-plans
+http://localhost:5000/api/v1/marketing-plans/:id
+
+# Financial Management
+http://localhost:5000/api/v1/projects/:projectId/finance (POST, GET)
+http://localhost:5000/api/v1/projects/:projectId/finance/summary (GET)
+
+# Tasks
+http://localhost:5000/api/v1/projects/:projectId/tasks (POST, GET)
+http://localhost:5000/api/v1/tasks/:id (PUT)
+
+# Team Management
+http://localhost:5000/api/v1/projects/:projectId/team (POST - Add Member, GET - List Members)
+http://localhost:5000/api/v1/projects/:projectId/team/:userId (DELETE - Remove Member)
+
+# Community
+http://localhost:5000/api/v1/community/posts (POST - Create Post, GET - List Posts)
+http://localhost:5000/api/v1/community/posts/:id (GET - Single Post, PUT - Update, DELETE - Delete)
+http://localhost:5000/api/v1/community/posts/:id/like (PUT - Like/Unlike)
+http://localhost:5000/api/v1/community/posts/:postId/comments (POST - Add Comment)
+http://localhost:5000/api/v1/community/comments/:id (DELETE - Delete Comment)
+
+# Subscriptions
+http://localhost:5000/api/v1/subscriptions (GET - Current Status, PUT - Update Plan, DELETE - Cancel)
+
+# AI
+http://localhost:5000/api/v1/ai/consultant
+http://localhost:5000/api/v1/ai/mentor
+http://localhost:5000/api/v1/ai/onboarding-analysis

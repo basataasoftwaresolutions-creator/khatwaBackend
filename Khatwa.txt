@@ -1,0 +1,5 @@
+Khatwa
+create endpoints based on the current website flow 
+create endpoints for admin (based on what i see right for admin)
+email service provider will be mailtrap
+backend hosting is render (awaiting account)
